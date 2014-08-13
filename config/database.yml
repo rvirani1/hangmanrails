@@ -1,0 +1,20 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: hangmanrails_development
+  username: riaznvirani
+  password: password
+
+test:
+  <<: *default
+  database: hangmanrails_test
+  username: riaznvirani
+  password: password
+
+
